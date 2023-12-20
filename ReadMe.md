@@ -18,6 +18,12 @@
 3. 当提示输入文件夹路径时，输入需要添加注释的代码的文件夹路径
 4. 程序执行完成之后，请使用合适的代码对比工具来同步注释，比如 BCompare
 
+## 效果截图
+
+![img](https://memosfile.qiangtu.com/picgo/assets/2023/12/21202312_21015336.jpeg)
+
+![img](https://memos2504.oss-accelerate.aliyuncs.com/memos2504/assets/2023/12/20/1703078174_mmexport1703077691016.jpg)
+
 ## 注意事项
 
 由于 ChatGPT 的幻觉问题依然十分严重，所以我们建议大家使用 `gpt-4-32k` 来进行注释操作。如果预算有限，可以选择使用 `gpt-3.5-turbo-16k` 进行替代。
