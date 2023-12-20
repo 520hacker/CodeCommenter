@@ -20,7 +20,7 @@
 
 ## 效果截图
 
-![img](https://memosfile.qiangtu.com/picgo/assets/2023/12/21202312_21015336.jpeg)
+![img](https://memos2504.oss-accelerate.aliyuncs.com/memos2504/assets/2023/12/20/1703078165_mmexport1703077689361.jpg)
 
 ![img](https://memos2504.oss-accelerate.aliyuncs.com/memos2504/assets/2023/12/20/1703078174_mmexport1703077691016.jpg)
 
