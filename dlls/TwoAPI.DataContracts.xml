@@ -1,0 +1,2258 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TwoAPI.DataContracts</name>
+    </assembly>
+    <members>
+        <member name="T:TwoAPI.DataContracts.ApiErrors.TwoAPIErrors">
+            <summary>
+            bar API errors
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.ApiErrors.TwoAPIErrors.DataNotExits">
+            <summary>
+            Data Not Exits
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.ApiErrors.TwoAPIErrors.Unknown">
+            <summary>
+            Unknown bar API error
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.ApiErrors.TwoAPIErrors.InvalidSessionId">
+            <summary>
+            Invalid Session Id
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.ApiErrors.TwoAPIErrors.InvalidUserName">
+            <summary>
+            Invalid UserName.
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.ApiErrors.TwoAPIErrors.InvalidPassword">
+            <summary>
+            Invalid Password.
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.ApiErrors.TwoAPIErrors.InvalidCount">
+            <summary>
+            Invalid Count
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.ApiErrors.TwoAPIErrors.UserRegisterDisabled">
+            <summary>
+            用户注册已禁用
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Consts.AliAI">
+            <summary>
+            阿里通义千问AI
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.AliAI.Host">
+            <summary>
+            服务器地址
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.AliAI.ChatCompletions">
+            <summary>
+            路径
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Consts.GoogleAI">
+            <summary>
+            谷歌AI 基础信息
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.GoogleAI.Host">
+            <summary>
+            API host
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.GoogleAI.ChatCompletions">
+            <summary>
+            API 请求地址
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Consts.GoogleAI.ActionTypes">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.GoogleAI.ActionTypes.none">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.GoogleAI.ActionTypes.generateContent">
+            <summary>
+            生产内容
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.GoogleAI.ActionTypes.generateText">
+            <summary>
+            生产文字
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.GoogleAI.ActionTypes.streamGenerateContent">
+            <summary>
+            流式生产内容
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.GoogleAI.ActionTypes.countTokens">
+            <summary>
+            计算消耗
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.GoogleAI.ActionTypes.embedContent">
+            <summary>
+            向量化数据
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.GoogleAI.ActionTypes.generateMessage">
+            <summary>
+            generate Message
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.GoogleAI.ActionTypes.countMessageTokens">
+            <summary>
+            count Message Tokens
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.GoogleAI.ActionTypes.countTextTokens">
+            <summary>
+            count Text Tokens
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.GoogleAI.ActionTypes.createTunedTextModel">
+            <summary>
+            create Tuned Text Model
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.GoogleAI.ActionTypes.embedText">
+            <summary>
+            embed Text
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.GoogleAI.ActionTypes.generateAnswer">
+            <summary>
+            generate Answer
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.Balance">
+            <summary>
+            获取余额，官方已不支持，但是第三方支持。
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.Usage">
+            <summary>
+            usage
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.Completions">
+            <summary>
+            发起一条对话, 适用于 text-davinci-003 等模型
+            curl https://api.openai.com/v1/completions \ -H "Content-Type: application/json" \ -H "Authorization: Bearer $OPENAI_API_KEY" \ -d '{ "model": "text-davinci-003", "prompt": "Say this is a test", "max_tokens": 7, "temperature": 0 }'
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.ChatCompletions">
+            <summary>
+            发起一条对话
+            curl https://api.openai.com/v1/chat/completions \ -H "Content-Type: application/json" \ -H "Authorization: Bearer $OPENAI_API_KEY" \ -d '{ "model": "gpt-3.5-turbo", "messages": [{"role": "user", "content": "Say this is a test!"}], "temperature": 0.7 }'
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.Edits">
+            <summary>
+            给定一个提示和一条指令，模型将返回提示的编辑版本。
+            curl https://api.openai.com/v1/edits \ -H "Content-Type: application/json" \ -H "Authorization: Bearer $OPENAI_API_KEY" \ -d '{ "model": "text-davinci-edit-001", "input": "What day of the wek is it?", "instruction": "Fix the spelling mistakes" }'
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.Models">
+            <summary>
+            列出模型
+            GET https://api.openai.com/v1/models
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.ModelDetail">
+            <summary>
+            检索模型实例，提供有关模型的基本信息，例如所有者和权限。
+            其中，model 为必填的字符串类型，用于此请求的模型的 ID。
+            GET https://api.openai.com/v1/models/{model}
+            curl https://api.openai.com/v1/models/text-davinci-003 \ -H "Authorization: Bearer $OPENAI_API_KEY"
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.ImagesGenerations">
+            <summary>
+            给定一个提示和/或输入图像，模型将生成一张新的图像。
+            curl https://api.openai.com/v1/images/generations \ -H "Content-Type: application/json" \ -H "Authorization: Bearer $OPENAI_API_KEY" \ -d '{ "prompt": "A cute baby sea otter", "n": 2, "size": "1024x1024" }'
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.ImagesEdits">
+            <summary>
+            根据原始图像和提示创建编辑或扩展的图像。
+            curl https://api.openai.com/v1/images/edits \ -H "Authorization: Bearer $OPENAI_API_KEY" \ -F image="@otter.png" \ -F mask="@mask.png" \ -F prompt="A cute baby sea otter wearing a beret" \ -F n=2 \ -F size="1024x1024"
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.ImagesVariations">
+            <summary>
+            创建给定图像的变体。
+            curl https://api.openai.com/v1/images/variations \ -H "Authorization: Bearer $OPENAI_API_KEY" \ -F image="@otter.png" \ -F n=2 \ -F size="1024x1024"
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.Embeddings">
+            <summary>
+            创建一个嵌入向量，代表输入的文本。
+            curl https://api.openai.com/v1/embeddings \ -H "Authorization: Bearer $OPENAI_API_KEY" \ -H "Content-Type: application/json" \ -d '{ "input": "The food was delicious and the waiter...", "model": "text-embedding-ada-002" }'
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.AudioSpeech">
+            <summary>
+            将语言文字转成声音。
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.AudioTranslations">
+            <summary>
+            将音频翻译成英语。
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.Files">
+            <summary>
+            List files
+            返回属于用户组织的文件列表。
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.File">
+            <summary>
+            返回指定文件的内容。
+            GET https://api.openai.com/v1/files/{file_id}/content
+            curl https://api.openai.com/v1/files/file-XjGxS3KTG0uNmNOK362iJua3/content \ -H "Authorization: Bearer $OPENAI_API_KEY" > file.jsonl
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.FileDelete">
+            <summary>
+            删除一个文件
+            DELETE https://api.openai.com/v1/files/{file_id}
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.FileInfo">
+            <summary>
+            返回有关特定文件的信息。
+            Retrieve file
+            GET https://api.openai.com/v1/files/{file_id}
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.FineTtunes">
+            <summary>
+            Fine-tunes 微调
+            创建一个工作，从给定的数据集中微调指定模型。
+            响应包括已入队的作业的详细信息，包括 作业状态 和 完成后微调模型的名称。
+            POST https://api.openai.com/v1/fine-tunes
+            curl https://api.openai.com/v1/fine-tunes \ -H "Content-Type: application/json" \ -H "Authorization: Bearer $OPENAI_API_KEY" \ -d '{ "training_file": "file-XGinujblHPwGLSztz8cPS8XY" }'
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.FineTtunesList">
+            <summary>
+            列出组织的微调作业
+            GET https://api.openai.com/v1/fine-tunes
+            curl https://api.openai.com/v1/fine-tunes \ -H "Authorization: Bearer $OPENAI_API_KEY"
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.FineTtunesDetail">
+            <summary>
+            获取有关微调作业的信息。
+            GET https://api.openai.com/v1/fine-tunes/{fine_tune_id}
+            curl https://api.openai.com/v1/fine-tunes/ft-AF1WoRqd3aJAHsqc9NY7iL8F \ -H "Authorization: Bearer $OPENAI_API_KEY"
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.FineTtunesCancel">
+            <summary>
+            立即取消微调工作。
+            POST https://api.openai.com/v1/fine-tunes/{fine_tune_id}/cancel
+            curl https://api.openai.com/v1/fine-tunes/ft-AF1WoRqd3aJAHsqc9NY7iL8F/cancel \ -H "Authorization: Bearer $OPENAI_API_KEY
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.FineTtunesEvents">
+            <summary>
+            获取微调作业的精细状态更新。
+            GET https://api.openai.com/v1/fine-tunes/{fine_tune_id}/events
+            curl https://api.openai.com/v1/fine-tunes/ft-AF1WoRqd3aJAHsqc9NY7iL8F/events \ -H "Authorization: Bearer $OPENAI_API_KEY"
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.FineTtunesModelDelete">
+            <summary>
+            删除微调的模型。您必须在组织中具有所有者的角色。
+            DELETE https://api.openai.com/v1/models/{model}
+            curl https://api.openai.com/v1/models/curie:ft-acmeco-2021-03-03-21-44-20 \ -X DELETE \ -H "Authorization: Bearer $OPENAI_API_KEY"
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.Engines">
+            <summary>
+            列出当前可用的（未经微调的）模型，并提供有关每个模型的基本信息，例如所有者和可用性。
+            GET https://api.openai.com/v1/engines
+            curl https://api.openai.com/v1/engines \ -H "Authorization: Bearer $OPENAI_API_KEY"
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Consts.OpenAIV1.Moderations">
+            <summary>
+            分类判断文本是否违反 OpenAI 的内容政策
+            POST https://api.openai.com/v1/moderations
+            curl https://api.openai.com/v1/moderations \ -H "Content-Type: application/json" \ -H "Authorization: Bearer $OPENAI_API_KEY" \ -d '{ "input": "I want to kill them." }'
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Enums">
+            <summary>
+            枚举
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Enums.AdvertisementAppendType">
+            <summary>
+            广告插入的类型
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.AdvertisementAppendType.Default">
+            <summary>
+            默认，不添加
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.AdvertisementAppendType.Start">
+            <summary>
+            Start
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.AdvertisementAppendType.End">
+            <summary>
+            End
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.AdvertisementAppendType.Random">
+            <summary>
+            Random
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Enums.AdvertisementBlockType">
+            <summary>
+            广告移除设置
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.AdvertisementBlockType.Default">
+            <summary>
+            默认，获取到全文之后替换
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.AdvertisementBlockType.Start">
+            <summary>
+            Start
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.AdvertisementBlockType.End">
+            <summary>
+            End
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Enums.SettleType">
+            <summary>
+            结算类型
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.SettleType.Default">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.SettleType.PerTimeToken">
+            <summary>
+            按时间结算
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Enums.LogSaveType">
+            <summary>
+            日志类型
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.LogSaveType.Disabled">
+            <summary>
+            禁用
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.LogSaveType.Default">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.LogSaveType.ELK">
+            <summary>
+            ELK
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Enums.LogStatus">
+            <summary>
+            日志状态
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.LogStatus.Default">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.LogStatus.Success">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Enums.PromptStatus">
+            <summary>
+            令牌状态
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.PromptStatus.Deleted">
+            <summary>
+            已删除
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.PromptStatus.All">
+            <summary>
+            所有
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.PromptStatus.Enabled">
+            <summary>
+            已启用
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.PromptStatus.Disabled">
+            <summary>
+            已禁用
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Enums.VectorFileStatus">
+            <summary>
+            向量库文件状态
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.VectorFileStatus.Deleted">
+            <summary>
+            已删除
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.VectorFileStatus.All">
+            <summary>
+            所有
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.VectorFileStatus.Enabled">
+            <summary>
+            已启用
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.VectorFileStatus.Disabled">
+            <summary>
+            已禁用
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Enums.VectorProjectStatus">
+            <summary>
+            向量库工程状态
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.VectorProjectStatus.Deleted">
+            <summary>
+            已删除
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.VectorProjectStatus.All">
+            <summary>
+            所有
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.VectorProjectStatus.Enabled">
+            <summary>
+            已启用
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.VectorProjectStatus.Disabled">
+            <summary>
+            已禁用
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Enums.TokenStatus">
+            <summary>
+            提示词状态
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.TokenStatus.Deleted">
+            <summary>
+            已删除
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.TokenStatus.All">
+            <summary>
+            所有
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.TokenStatus.Enabled">
+            <summary>
+            已启用
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.TokenStatus.Disabled">
+            <summary>
+            已禁用
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Enums.ChannelStatus">
+            <summary>
+            渠道状态
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.ChannelStatus.Deleted">
+            <summary>
+            已删除
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.ChannelStatus.All">
+            <summary>
+            所有
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.ChannelStatus.Enabled">
+            <summary>
+            已启用
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.ChannelStatus.Disabled">
+            <summary>
+            已禁用
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Enums.RedemptionStatus">
+            <summary>
+            兑换码状态
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.RedemptionStatus.Deleted">
+            <summary>
+            已删除
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.RedemptionStatus.All">
+            <summary>
+            所有
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.RedemptionStatus.Enabled">
+            <summary>
+            已启用
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.RedemptionStatus.Disabled">
+            <summary>
+            已禁用
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.RedemptionStatus.Activated">
+            <summary>
+            已激活
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Enums.UserStatus">
+            <summary>
+            用户状态
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.UserStatus.Deleted">
+            <summary>
+            已删除
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.UserStatus.All">
+            <summary>
+            所有
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.UserStatus.Enabled">
+            <summary>
+            已启用
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.UserStatus.Disabled">
+            <summary>
+            已禁用
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Enums.LogType">
+            <summary>
+            日志类型
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.LogType.ChatRequest">
+            <summary>
+            聊天请求
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.LogType.OptionUpdate">
+            <summary>
+            选项更新
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.LogType.UserRedeem">
+            <summary>
+            用户兑换
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.LogType.SystemEvent">
+            <summary>
+            系统事件
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.LogType.DisableChannel">
+            <summary>
+            禁用渠道
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.LogType.BlockedMessage">
+            <summary>
+            阻止消息
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.LogType.DecreaseChannelWeight">
+            <summary>
+            减少渠道权重
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Enums.ChannelType">
+            <summary>
+            渠道类型
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.ChannelType.OpenAI">
+            <summary>
+            OpenAI
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.ChannelType.XunFei">
+            <summary>
+            讯飞
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.ChannelType.BaiDu">
+            <summary>
+            百度
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.ChannelType.Ali">
+            <summary>
+            阿里
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.ChannelType.ChatGLM">
+            <summary>
+            ChatGLM
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.ChannelType.Claude">
+            <summary>
+            Claude
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.ChannelType.Google">
+            <summary>
+            谷歌
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.ChannelType.Meta">
+            <summary>
+            Meta
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.ChannelType.Midjourney">
+            <summary>
+            Midjourney
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.ChannelType.StableDiffusion">
+            <summary>
+            StableDiffusion
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.ChannelType.AI360">
+            <summary>
+            AI360
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.ChannelType.AzureOpenAI">
+            <summary>
+            Azure OpenAI
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.ChannelType.BaiChuan">
+            <summary>
+            百川
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.ChannelType.Moonshot">
+            <summary>
+            月之暗面
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Enums.UserRole">
+            <summary>
+            用户角色
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.UserRole.Admin">
+            <summary>
+            管理员
+            </summary>
+        </member>
+        <member name="F:TwoAPI.DataContracts.Enums.UserRole.User">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.BasePlus.AdvertisementAppenderNode">
+            <summary>
+            广告添加器
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.AdvertisementAppenderNode.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.AdvertisementAppenderNode.Type">
+            <summary>
+            广告词插入方式
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.AdvertisementAppenderNode.RndNumber">
+            <summary>
+            随机数，当type为3的时候作为桥变量，会被初始化的时候覆盖
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.AdvertisementAppenderNode.Models">
+            <summary>
+            广告词植入到模型，不指定则广告植入所有模型
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.AdvertisementAppenderNode.ModelWhiteList">
+            <summary>
+            广告词一定不会植入的模型
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.AdvertisementAppenderNode.Contents">
+            <summary>
+            广告词
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.BasePlus.AdvertisementBlockerNode">
+            <summary>
+            广告过滤器
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.AdvertisementBlockerNode.Enabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.AdvertisementBlockerNode.Type">
+            <summary>
+            广告词过滤方式
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.AdvertisementBlockerNode.Contents">
+            <summary>
+            需要被过滤的广告词
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.BasePlus.AdvertisementSettingsNode">
+            <summary>
+            广告配置
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.AdvertisementSettingsNode.Appender">
+            <summary>
+            广告插入器
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.AdvertisementSettingsNode.Blocker">
+            <summary>
+            广告过滤
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.BasePlus.ChannelFilterNode">
+            <summary>
+            Represents a channel filter node.
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.ChannelFilterNode.Model">
+            <summary>
+            Gets or sets the model of the channel filter.
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.ChannelFilterNode.Group">
+            <summary>
+            Gets or sets the group of the channel filter.
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.BasePlus.ChannelLimitNode">
+            <summary>
+            频道限制
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.ChannelLimitNode.Minute">
+            <summary>
+            每分钟限制访问次数
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.ChannelLimitNode.Hour">
+            <summary>
+            每小时限制访问次数
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.ChannelLimitNode.Day">
+            <summary>
+            每天限制访问次数
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.BasePlus.ChannelOtherNode">
+            <summary>
+            频道的高级设置
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.ChannelOtherNode.AdvertisementSettings">
+            <summary>
+            广告添加和过滤设置
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.ChannelSettleMethodNode.Type">
+            <summary>
+            默认0，按照原有逻辑；1，按照固定Token消耗
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.BasePlus.LoadBalanceSettingNode">
+            <summary>
+            负载均衡设置
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.LoadBalanceSettingNode.Type">
+            <summary>
+            0 default,1 速度优先
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.LoadBalanceSettingNode.UpdateTimeonConnection">
+            <summary>
+            是否使用实时的链接速率（手动定制性更小）
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.BasePlus.LogSaveSettingNode">
+            <summary>
+            日志存储的配置
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.LogSaveSettingNode.Type">
+            <summary>
+            日志的存储类型，枚举来自 SettleType
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.LogSaveSettingNode.DisabledMethods">
+            <summary>
+            禁用日志的模块
+            </summary> 
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.BasePlus.UserGroupSettingNode">
+            <summary>
+            用户组的配置
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.UserGroupSettingNode.AdvertisementSettings">
+            <summary>
+            用户组配置
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.BasePlus.UserGroupSettingsNode">
+            <summary>
+            用户组设置
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.UserGroupSettingsNode.Settings">
+            <summary>
+            用户组设置
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.BasePlus.UserRegisterSettingNode">
+            <summary>
+            用户注册配置
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.UserRegisterSettingNode.Enabled">
+            <summary>
+            是否开放注册
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.UserRegisterSettingNode.AutoGenerateKey">
+            <summary>
+            是否注册自动创建一个Token
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.BasePlus.UserRegisterSettingNode.GiftToken">
+            <summary>
+            注册赠送的token
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Channels.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Channels.Key">
+            <summary>
+            key, token
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Channels.Status">
+            <summary>
+            状态，-1 删除 1 启用 2 禁用
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Channels.Name">
+            <summary>
+            频道名称
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Channels.Weight">
+            <summary>
+            权重 默认100
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Channels.CreatedTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Channels.TestTime">
+            <summary>
+            连接测试时间
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Channels.ResponseTime">
+            <summary>
+            连接测试结果
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Channels.BaseUrl">
+            <summary>
+            基础URL 代理地址
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Channels.Other">
+            <summary>
+            Other
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Channels.Balance">
+            <summary>
+            余额
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Channels.BalanceUpdatedTime">
+            <summary>
+            余额更新时间
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Channels.Models">
+            <summary>
+            模型
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Channels.Group">
+            <summary>
+            群组
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Channels.UsedQuota">
+            <summary>
+            已使用额度
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Channels.ModelMapping">
+            <summary>
+            模型映射，注意限制了内容长度 1024
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Channels.Limits">
+            <summary>
+            频率限制，注意限制了内容长度 1024
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Channels.ExchangeRate">
+            <summary>
+            汇率
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Channels.SettleMethod">
+            <summary>
+            结算方式，注意限制了内容长度 1024
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.Base.Prompts">
+            <summary>
+            Prompts， 提示词
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Prompts.Id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Prompts.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Prompts.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Prompts.Avatar">
+            <summary>
+            Avatar,
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Prompts.Tags">
+            <summary>
+            标签
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Prompts.Description">
+            <summary>
+            Description
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Prompts.Content">
+            <summary>
+            Content
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Prompts.Config">
+            <summary>
+            Config
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Prompts.CreatedTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Prompts.UserId">
+            <summary>
+            创建用户id
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Prompts.Weight">
+            <summary>
+            排序权重
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Prompts.Status">
+            <summary>
+            Status
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.Base.Tokens">
+            <summary>
+            密钥
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Tokens.Id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Tokens.UserId">
+            <summary>
+            用户id
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Tokens.Key">
+            <summary>
+            密钥
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Tokens.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Tokens.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Tokens.CreatedTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Tokens.AccessedTime">
+            <summary>
+            最后使用时间
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Tokens.ExpiredTime">
+            <summary>
+            过期时间
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Tokens.RemainQuota">
+            <summary>
+            剩余额度
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Tokens.UnlimitedQuota">
+            <summary>
+            不限制额度
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Tokens.UsedQuota">
+            <summary>
+            使用历史额度
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Tokens.RequestCount">
+            <summary>
+            请求次数
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Tokens.VectorProjectId">
+            <summary>
+            绑定的知识库工程
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Tokens.ModelMapping">
+            <summary>
+            模型映射，注意限制了内容长度 1024
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.Tokens.Models">
+            <summary>
+            限制只能访问的模型，注意限制了内容长度 1024
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.Base.VectorFiles">
+            <summary>
+            知识库文件
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorFiles.Id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorFiles.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorFiles.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorFiles.Url">
+            <summary>
+            path
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorFiles.Key">
+            <summary>
+            key, token
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorFiles.Tags">
+            <summary>
+            标签
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorFiles.UserId">
+            <summary>
+            创建用户id
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorFiles.FileSize">
+            <summary>
+            文件大小
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorFiles.Status">
+            <summary>
+            Status
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorFiles.Weight">
+            <summary>
+            排序权重
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorFiles.CreatedTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.Base.VectorProjects">
+            <summary>
+            知识库工程
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorProjects.Id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorProjects.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorProjects.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorProjects.Avatar">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorProjects.Tags">
+            <summary>
+            标签
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorProjects.Description">
+            <summary>
+            Description
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorProjects.Status">
+            <summary>
+            Status
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorProjects.Config">
+            <summary>
+            Config，JSON格式
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorProjects.UserId">
+            <summary>
+            创建用户id
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorProjects.FileIds">
+            <summary>
+            逗号分割的文件id
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorProjects.CreatedTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Base.VectorProjects.Weight">
+            <summary>
+            排序权重
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.Connections.ConnectionCacheNode">
+            <summary>
+            链接
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Connections.ConnectionCacheNode.Request">
+            <summary>
+            请求
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Connections.ConnectionCacheNode.UserId">
+            <summary>
+            用户id
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Connections.ConnectionCacheNode.OriginalModel">
+            <summary>
+            原模型
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Connections.ConnectionCacheNode.ChannelId">
+            <summary>
+            频道id
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Connections.ConnectionCacheNode.GroupMultiplier">
+            <summary>
+            分组倍率
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Connections.ConnectionCacheNode.ModelMultiplier">
+            <summary>
+            模型倍数
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Connections.ConnectionCacheNode.Ins">
+            <summary>
+            链接开始时间
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Connections.ConnectionCacheNode.AdvertisementSettings">
+            <summary>
+            广告设置
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.Ali.AliInputNode.Messages">
+            <summary>
+            必填，迄今为止描述对话的消息列表
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.Ali.AliParameterNode.MaxTokens">
+            <summary>
+            选填，Defaults to inf
+            在聊天完成中生成的最大 tokens 数。
+            输入令牌和生成的令牌的总长度受模型上下文长度的限制。
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.Ali.AliParameterNode.Temperature">
+            <summary>
+            选填，Defaults to 1
+            使用哪个采样温度，在 0和2之间。
+            较高的值，如0.8会使输出更随机，而较低的值，如0.2会使其更加集中和确定性。
+            我们通常建议修改这个（temperature ）为 top_p 但两者不能同时存在，二选一。
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.Ali.AliParameterNode.TopP">
+            <summary>
+            一种替代温度采样的方法叫做核心采样，模型会考虑到具有 top_p 概率质量的标记结果。因此，0.1 表示只有占前 10% 概率质量的标记被考虑。
+            我们通常建议修改这个（top_p ）或者 temperature，但不要同时修改两者。
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.Ali.AliParameterNode.TopK">
+            <summary>
+            生成时，采样候选集的大小。例如，取值为50时，仅将单次生成中得分最高的50个token组成随机采样的候选集。取值越大，生成的随机性越高；
+            取值越小，生成的确定性越高。注意：如果top_k参数为空或者top_k的值大于100，表示不启用top_k策略，此时仅有top_p策略生效，默认是空。
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:TwoAPI.DataContracts.Node.Vendor.Ali.AliParameterNode.RepetitionPenalty" -->
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.Ali.AliParameterNode.EnableSearch">
+            <summary>
+            生成时，是否参考搜索的结果。注意：打开搜索并不意味着一定会使用搜索结果；如果打开搜索，模型会将搜索结果作为prompt，
+            进而“自行判断”是否生成结合搜索结果的文本，默认为false
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.Ali.AliParameterNode.PresencePenalty">
+            <summary>
+            介于 -2.0 和 2.0 之间的数字。正值会根据它们是否出现在文本中迄今为止来惩罚新令牌，从而增加模型谈论新主题的可能性。
+            https://platform.openai.com/docs/api-reference/parameter-details
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.BaiChuan.BaiChuanResponseMessageNode.Messages">
+            <summary>
+            选择项列表
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.BaiChuan.BaiChuanResponseNode.Code">
+            <summary>
+            代码
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.BaiChuan.BaiChuanResponseNode.Msg">
+            <summary>
+            消息
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.BaiChuan.BaiChuanResponseNode.Success">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.BaiChuan.BaiChuanResponseNode.Data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.BaiChuan.BaiChuanResponseNode.Usage">
+            <summary>
+            使用情况
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.ChatGLM.ChatGLMResponseDataNode.TaskId">
+            <summary>
+            任务ID
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.ChatGLM.ChatGLMResponseDataNode.RequestId">
+            <summary>
+            请求ID
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.ChatGLM.ChatGLMResponseDataNode.TaskStatus">
+            <summary>
+            任务状态
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.ChatGLM.ChatGLMResponseDataNode.Choices">
+            <summary>
+            选择项列表
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.ChatGLM.ChatGLMResponseDataNode.Usage">
+            <summary>
+            使用情况
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.ChatGLM.ChatGLMResponseNode.Code">
+            <summary>
+            代码
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.ChatGLM.ChatGLMResponseNode.Msg">
+            <summary>
+            消息
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.ChatGLM.ChatGLMResponseNode.Data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.Vendor.Google.GoogleCandidatesNode">
+            <summary>
+             Google Candidates Node
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.Google.GoogleCandidatesNode.Content">
+            <summary>
+            content
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.Google.GoogleCandidatesNode.FinishReason">
+            <summary>
+            finish Reason
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.Google.GoogleCandidatesNode.Index">
+            <summary>
+            "index": 0,
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.Google.GoogleCandidatesNode.SafetyRatings">
+            <summary>
+            safety Ratings
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.Vendor.Google.GoogleInlineDataNode">
+            <summary>
+            Google Inline Data Node
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.Google.GoogleInlineDataNode.MimeType">
+            <summary>
+            Mime Type
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.Google.GoogleInlineDataNode.Data">
+            <summary>
+            data
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.Vendor.Google.GoolgeContentsNode">
+            <summary>
+            Content node
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.Google.GoolgeContentsNode.Parts">
+            <summary>
+            parts
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.Google.GoolgeContentsNode.Role">
+            <summary>
+            role
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.Vendor.Google.GoolgePartsNode">
+            <summary>
+            parts node
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.Google.GoolgePartsNode.Text">
+            <summary>
+            text content
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.Google.GoolgePartsNode.InlineData">
+            <summary>
+            inline data
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.Vendor.Google.GoolgeSafetyRatingsNode">
+            <summary>
+            Goolge Safety Ratings Node
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.Google.GoolgeSafetyRatingsNode.Category">
+            <summary>
+            category
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.Google.GoolgeSafetyRatingsNode.Probability">
+            <summary>
+            probability
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.Vendor.Google.PromptFeedbackNode">
+            <summary>
+            Prompt Feed back Node
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.Google.PromptFeedbackNode.SafetyRatings">
+            <summary>
+            safety Ratings
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.IIM.IIMBalanceDataNode.UsageCount">
+            <summary>
+            Usage Count
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.IIM.IIMBalanceDataNode.UsedTokens">
+            <summary>
+             Used Tokens
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.IIM.IIMBalanceDataNode.TotalTokens">
+            <summary>
+            Total Tokens
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.IIM.IIMBalanceNode.Code">
+            <summary>
+            Code
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.IIM.IIMBalanceNode.Message">
+            <summary>
+            Message
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.IIM.IIMBalanceNode.Data">
+            <summary>
+            Data
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.Vendor.OpenAI.ChatCompletionMessageNode">
+            <summary>
+            chat completion message node
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.OpenAI.ChatCompletionMessageNode.Role">
+            <summary>
+            必填,此消息的作者角色。system 、user 或 assistant 之一
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.OpenAI.ChatCompletionMessageNode.Content">
+            <summary>
+            必填,消息的内容
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.Vendor.OpenAI.EmbeddingsDataNode">
+            <summary>
+             basic embedding data node
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.OpenAI.EmbeddingsDataNode.Embedding">
+            <summary>
+            embedding data result list
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.OpenAI.EmbeddingsDataNode.Index">
+            <summary>
+             the data index 
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.OpenAI.EmbeddingsDataNode.Object">
+            <summary>
+             the data type 
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.Vendor.OpenAI.ErrorNode">
+             <summary>
+             {
+              "error": {
+                "message": "1 validation error for Request\nbody -> file\n  field required (type=value_error.missing)",
+                "type": "invalid_request_error",
+                "param": null,
+                "code": null
+              }
+            }
+             </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.OpenAI.UsageResponse.TotalUsage">
+            <summary>
+            实际已用量
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.Vendor.OpenAI.VisionContentNode">
+            <summary>
+            Vision Content Node
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.OpenAI.VisionContentNode.Type">
+            <summary>
+            type
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.OpenAI.VisionContentNode.Text">
+            <summary>
+            text
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.OpenAI.VisionContentNode.ImageUrl">
+            <summary>
+            image url
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Node.Vendor.OpenAI.VisionImageUrlNode">
+            <summary>
+            vision image url node
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Node.Vendor.OpenAI.VisionImageUrlNode.Url">
+            <summary>
+            url
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.BasePageRequest.Offset">
+            <summary>
+            翻页起点
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.BasePageRequest.Limit">
+            <summary>
+            读取内容条数
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Custom.WebSummaryRequest.Urls">
+            <summary>
+            被抓取分析的网页地址，数组，建议一次只提供一个页面地址
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.System.UpgradeInitRequest.UpgradeToken">
+            <summary>
+            初始化用的token, 用于和环境变量中的值进行比对
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.System.UpgradeStatusRequest.UpgradeToken">
+            <summary>
+            初始化用的token, 用于和环境变量中的值进行比对
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Request.Manager.Token.TokensUpdateRequest">
+            <summary>
+            token update request
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Token.TokensUpdateRequest.Id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Token.TokensUpdateRequest.Name">
+            <summary>
+            name
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Token.TokensUpdateRequest.ExpiredTime">
+            <summary>
+            过期时间
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Token.TokensUpdateRequest.RemainQuota">
+            <summary>
+            剩余额度
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Token.TokensUpdateRequest.UnlimitedQuota">
+            <summary>
+            不限制额度
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Token.TokensUpdateRequest.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Token.TokensUpdateRequest.Models">
+            <summary>
+            许可模型
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Token.TokensUpdateRequest.ModelMapping">
+            <summary>
+            模型映射
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Request.Manager.Vector.VectorFileDeleteRequest">
+            <summary>
+            删除文件
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorFileDeleteRequest.Id">
+            <summary>
+            文件编号
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Request.Manager.Vector.VectorFileNewRequest">
+            <summary>
+            一个新的知识库文件
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorFileNewRequest.Type">
+            <summary>
+            类型
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorFileNewRequest.Name">
+            <summary>
+            名称
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorFileNewRequest.Url">
+            <summary>
+            path
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorFileNewRequest.Key">
+            <summary>
+            key, token
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorFileNewRequest.Tags">
+            <summary>
+            标签
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorFileNewRequest.FileSize">
+            <summary>
+            文件大小
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorFileNewRequest.Weight">
+            <summary>
+            排序权重
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorFileRequest.Id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Request.Manager.Vector.VectorFileUpdateRequest">
+            <summary>
+            向量文件信息更新
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorFileUpdateRequest.Id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorFileUpdateRequest.Type">
+            <summary>
+            类型
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorFileUpdateRequest.Name">
+            <summary>
+            名称
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorFileUpdateRequest.Url">
+            <summary>
+            path
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorFileUpdateRequest.Key">
+            <summary>
+            key, token
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorFileUpdateRequest.Tags">
+            <summary>
+            标签
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorFileUpdateRequest.FileSize">
+            <summary>
+            文件大小
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorFileUpdateRequest.Weight">
+            <summary>
+            排序权重
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorFileUpdateRequest.Status">
+            <summary>
+            Status
+            </summary> 
+        </member>
+        <member name="T:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectDeleteRequest">
+            <summary>
+            知识库项目
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectDeleteRequest.Id">
+            <summary>
+            文件编号
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectNewRequest">
+            <summary>
+            知识库工程
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectNewRequest.Type">
+            <summary>
+            类型
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectNewRequest.Name">
+            <summary>
+            名称
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectNewRequest.Avatar">
+            <summary>
+            头像
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectNewRequest.Tags">
+            <summary>
+            标签
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectNewRequest.Description">
+            <summary>
+            Description
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectNewRequest.Config">
+            <summary>
+            Config，JSON格式
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectNewRequest.FileIds">
+            <summary>
+            逗号分割的文件id
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectNewRequest.Weight">
+            <summary>
+            排序权重
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectRequest.Id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectUpdateRequest">
+            <summary>
+            知识库项目信息更新
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectUpdateRequest.Id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectUpdateRequest.Type">
+            <summary>
+            类型
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectUpdateRequest.Name">
+            <summary>
+            名称
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectUpdateRequest.Avatar">
+            <summary>
+            头像
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectUpdateRequest.Tags">
+            <summary>
+            标签
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectUpdateRequest.Description">
+            <summary>
+            Description
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectUpdateRequest.Config">
+            <summary>
+            Config，JSON格式
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectUpdateRequest.FileIds">
+            <summary>
+            逗号分割的文件id
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectUpdateRequest.Weight">
+            <summary>
+            排序权重
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Manager.Vector.VectorProjectUpdateRequest.Status">
+            <summary>
+            Status
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.Ali.AliCompletionRequest.Input">
+            <summary>
+            必填，迄今为止描述对话的消息列表
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.Ali.AliCompletionRequest.Parameters">
+            <summary>
+            参数列表
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.Ali.AliCompletionRequest.Model">
+            <summary>
+            要使用的模型ID。有关哪些模型适用于Chat API的详细信息，请查看
+            https://platform.openai.com/docs/models/model-endpoint-compatibility
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Request.Vendors.Google.GoogleSteamRequest">
+            <summary>
+            Google Steam Request
+            </summary>
+        </member>
+        <member name="M:TwoAPI.DataContracts.Request.Vendors.Google.GoogleSteamRequest.#ctor(TwoAPI.DataContracts.Request.Vendors.OpenAI.CompletionsRequest,TwoAPI.DataContracts.Node.Vendor.Google.GoolgeContentsNode)">
+            <summary>
+            new GoogleSteamRequest via CompletionsRequest
+            </summary>
+            <param name="request"></param>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.Google.GoogleSteamRequest.Contents">
+            <summary>
+            contents
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.AudioSpeechRequest.Model">
+            <summary>
+            model string Required One of the available TTS models: tts-1 or tts-1-hd
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.AudioSpeechRequest.Input">
+            <summary>
+            input string Required The text to generate audio for. The maximum length is 4096 characters.
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.AudioSpeechRequest.Voice">
+            <summary>
+            The voice to use when generating the audio. Supported voices are alloy, echo, fable, onyx, nova, and shimmer. Previews of the voices are available in the Text to speech guide.
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.AudioSpeechRequest.ResponseFormat">
+             <summary>
+             response_format string   Optional Defaults to mp3
+            The format to audio in. Supported formats are mp3, opus, aac, and flac.
+             </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.AudioSpeechRequest.Speed">
+            <summary>
+            number  Optional  Defaults to 1 The speed of the generated audio.Select a value from 0.25 to 4.0. 1.0 is the default.
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Request.Vendors.OpenAI.AudioTranscriptionsRequest">
+            <summary>
+            https://platform.openai.com/docs/api-reference/audio/createTranslation
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.AudioTranscriptionsRequest.Prompt">
+            <summary>
+            An optional text to guide the model's style or continue a previous audio segment. The prompt should match the audio
+            language.
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.AudioTranscriptionsRequest.ResponseFormat">
+            <summary>
+                The format of the transcript output, in one of these options: json, text, srt, verbose_json, or vtt.
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.AudioTranscriptionsRequest.Language">
+            <summary>
+                The language of the input audio. Supplying the input language in
+                <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO-639-1</a> format will improve accuracy and
+                latency.
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.AudioTranscriptionsRequest.File">
+            <summary>
+                The audio file to transcribe, in one of these formats: mp3, mp4, mpeg, mpga, m4a, wav, or webm.
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.AudioTranscriptionsRequest.FileName">
+            <summary>
+                FileName
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.AudioTranscriptionsRequest.Model">
+            <summary>
+                ID of the model to use. Only whisper-1 is currently available.
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.AudioTranscriptionsRequest.Temperature">
+            <summary>
+                The sampling temperature, between 0 and 1. Higher values like 0.8 will make the output more random, while lower
+                values like 0.2 will make it more focused and deterministic. If set to 0, the model will use log probability to
+                automatically increase the temperature until certain thresholds are hit.
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.CompletionsRequest.Messages">
+            <summary>
+            必填，迄今为止描述对话的消息列表
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.CompletionsRequest.MaxTokens">
+            <summary>
+            选填，Defaults to inf
+            在聊天完成中生成的最大 tokens 数。
+            输入令牌和生成的令牌的总长度受模型上下文长度的限制。
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.CompletionsRequest.Model">
+            <summary>
+            要使用的模型ID。有关哪些模型适用于Chat API的详细信息，请查看
+            https://platform.openai.com/docs/models/model-endpoint-compatibility
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.CompletionsRequest.Temperature">
+            <summary>
+            选填，Defaults to 1
+            使用哪个采样温度，在 0和2之间。
+            较高的值，如0.8会使输出更随机，而较低的值，如0.2会使其更加集中和确定性。
+            我们通常建议修改这个（temperature ）为 top_p 但两者不能同时存在，二选一。
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.CompletionsRequest.TopP">
+            <summary>
+            一种替代温度采样的方法叫做核心采样，模型会考虑到具有 top_p 概率质量的标记结果。因此，0.1 表示只有占前 10% 概率质量的标记被考虑。
+            我们通常建议修改这个（top_p ）或者 temperature，但不要同时修改两者。
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.CompletionsRequest.FrequencyPenalty">
+            <summary>
+            frequency_penalty （number，选填，Defaults to 0）
+            介于-2.0和2.0之间的数字。正值会根据文本中新令牌的现有频率对其进行惩罚，从而降低模型重复相同行的可能性。
+            https://platform.openai.com/docs/api-reference/parameter-details
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.CompletionsRequest.PresencePenalty">
+            <summary>
+            介于 -2.0 和 2.0 之间的数字。正值会根据它们是否出现在文本中迄今为止来惩罚新令牌，从而增加模型谈论新主题的可能性。
+            https://platform.openai.com/docs/api-reference/parameter-details
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.CompletionsRequest.FunctionCall">
+            <summary>
+            function call
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Request.Vendors.OpenAI.EmbeddingsRequest">
+             <summary>
+            What are embeddings?
+            OpenAI’s text embeddings measure the relatedness of text strings.Embeddings are commonly used for:
+            Search(where results are ranked by relevance to a query string)
+            Clustering(where text strings are grouped by similarity)
+            Recommendations(where items with related text strings are recommended)
+            Anomaly detection(where outliers with little relatedness are identified)
+            Diversity measurement(where similarity distributions are analyzed)
+            Classification(where text strings are classified by their most similar label)
+             </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.EmbeddingsRequest.Input">
+            <summary>
+            the content should be embedding
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.EmbeddingsRequest.Model">
+             <summary>
+             MODEL GENERATION	TOKENIZER	MAX INPUT TOKENS	KNOWLEDGE CUTOFF
+            V2 cl100k_base	8191	Sep 2021
+            V1 GPT-2/GPT-3	2046	Aug 2020
+             </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.InternalCompletionsRequest.EmbeddingsRequest">
+            <summary>
+            embeddings request
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.InternalCompletionsRequest.Type">
+            <summary>
+            type
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.InternalCompletionsRequest.CustomParameters">
+            <summary>
+            custom parameters
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.InternalCompletionsRequest.AudioTranscriptionsRequest">
+            <summary>
+            audio transcriptions request
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.InternalCompletionsRequest.CompletionsRequest">
+            <summary>
+            completions request
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.InternalCompletionsRequest.Response">
+            <summary>
+            response
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Request.Vendors.OpenAI.InternalCompletionsRequest.AudioSpeechRequest">
+            <summary>
+            audio speech request
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Response.Vendors.OpenAI.GoogleCompletionsResponse">
+            <summary>
+            Google Completions Response
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Response.Vendors.OpenAI.GoogleCompletionsResponse.PromptFeedback">
+            <summary>
+            prompt Feedback
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Response.Vendors.OpenAI.GoogleSteamCompletionsResponse">
+            <summary>
+            Google Completions Response
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Response.Vendors.OpenAI.GoogleSteamCompletionsResponse.Candidates">
+            <summary>
+            Candidates
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Response.Vendors.OpenAI.CompletionCreateResponse">
+            <summary>
+            completion create response
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Response.Vendors.OpenAI.CompletionCreateResponse.Model">
+            <summary>
+            model
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Response.Vendors.OpenAI.CompletionCreateResponse.Choices">
+            <summary>
+            choices
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Response.Vendors.OpenAI.CompletionCreateResponse.Usage">
+            <summary>
+            usage
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Response.Vendors.OpenAI.CompletionCreateResponse.CreatedAt">
+            <summary>
+            created
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Response.Vendors.OpenAI.CompletionCreateResponse.Id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Response.Vendors.OpenAI.CompletionCreateResponse.Object">
+            <summary>
+            object type
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Response.Vendors.OpenAI.CompletionCreateResponse.IsEnd">
+            <summary>
+            is end
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Response.Vendors.OpenAI.CompletionCreateResponse.Result">
+            <summary>
+            result
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Response.Vendors.OpenAI.EmbeddingsResponse">
+            <summary>
+            Embeddings Response 
+            </summary>  
+        </member>
+        <member name="P:TwoAPI.DataContracts.Response.Vendors.OpenAI.EmbeddingsResponse.Data">
+            <summary>
+            Embedding Data
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Response.Vendors.OpenAI.EmbeddingsResponse.Model">
+            <summary>
+             the model name
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Response.Vendors.OpenAI.EmbeddingsResponse.Object">
+            <summary>
+             the data type 
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Response.Vendors.OpenAI.EmbeddingsResponse.Usage">
+            <summary>
+             the usage for current embedding request
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:TwoAPI.DataContracts.Response.Vendors.OpenAI.ModelsResponse" -->
+        <member name="P:TwoAPI.DataContracts.Response.Vendors.OpenAI.OpenAIBaseResponse.Error">
+            <summary>
+            {"error":{"message":"该令牌状态不可用","type":"one_api_error"}} 
+            </summary> 
+        </member>
+        <member name="P:TwoAPI.DataContracts.Response.Vendors.OpenAI.OpenAIBaseResponse.Msg">
+            <summary>
+            error message
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Response.Vendors.OpenAI.OpenAIBaseResponse.ErrorCode">
+            <summary>
+            error code
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Response.Vendors.OpenAI.OpenAIBaseResponse.ErrorMsg">
+            <summary>
+            error message
+            </summary>
+        </member>
+        <member name="P:TwoAPI.DataContracts.Response.Vendors.OpenAI.SubscriptionResponse.HardLimitUsd">
+            <summary>
+            订阅的可用量
+            </summary>
+        </member>
+        <member name="T:TwoAPI.DataContracts.Response.Vendors.Internal.InternalEmbeddingsResponse">
+            <summary>
+            EmbeddingsResponse
+            </summary>
+        </member>
+    </members>
+</doc>
