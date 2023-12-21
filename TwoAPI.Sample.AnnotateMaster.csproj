@@ -18,7 +18,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TwoAPI.DataContracts\TwoAPI.DataContracts.csproj" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="TwoAPI.DataContracts">
+      <HintPath>dlls\TwoAPI.DataContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="W2.Common.Types">
+      <HintPath>dlls\W2.Common.Types.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

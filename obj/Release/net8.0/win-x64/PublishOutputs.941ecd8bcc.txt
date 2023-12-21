@@ -1,0 +1,7 @@
+C:\Workspace\github\twoapi\twoapi-core\TwoAPI.Sample.AnnotateMaster\bin\Release\net8.0\win-x64\app.publish\TwoAPI.Sample.AnnotateMaster.pdb
+C:\Workspace\github\twoapi\twoapi-core\TwoAPI.Sample.AnnotateMaster\bin\Release\net8.0\win-x64\app.publish\appsettings.json
+C:\Workspace\github\twoapi\twoapi-core\TwoAPI.Sample.AnnotateMaster\bin\Release\net8.0\win-x64\app.publish\Microsoft.Data.SqlClient.SNI.dll
+C:\Workspace\github\twoapi\twoapi-core\TwoAPI.Sample.AnnotateMaster\bin\Release\net8.0\win-x64\app.publish\TwoAPI.DataContracts.pdb
+C:\Workspace\github\twoapi\twoapi-core\TwoAPI.Sample.AnnotateMaster\bin\Release\net8.0\win-x64\app.publish\TwoAPI.DataContracts.xml
+C:\Workspace\github\twoapi\twoapi-core\TwoAPI.Sample.AnnotateMaster\bin\Release\net8.0\win-x64\app.publish\W2.Common.Types.pdb
+C:\Workspace\github\twoapi\twoapi-core\TwoAPI.Sample.AnnotateMaster\bin\Release\net8.0\win-x64\app.publish\TwoAPI.Sample.AnnotateMaster.exe
